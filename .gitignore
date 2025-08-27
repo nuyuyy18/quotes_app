@@ -1,0 +1,5 @@
+# Abaikan bytecode Python
+__pycache__/
+
+# Abaikan direktori virtual environment
+venv/
