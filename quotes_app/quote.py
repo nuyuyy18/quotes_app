@@ -57,5 +57,9 @@ def main():
     return page_quotes
 
 if __name__ == "__main__":
-    main()
+    quotes_data = main()
+    # Simpan ke Excel
+    df = pd.DataFrame(quotes_data)
+    df.to_excel('quotes.xlsx', index=False)
+    print("✅ Excel file saved: quotes.xlsx")
     
